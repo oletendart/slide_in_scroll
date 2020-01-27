@@ -19,7 +19,10 @@ function debounce(func, wait = 20, immediate = true) {
 const sliderImages = document.querySelectorAll(".slide-in");
 
 function checkSlide(e) {
-  console.count(e);
+  console.log(window.scrollY);
+  sliderImages.forEach(slideImage => {
+    // const slideInAt =
+  });
 }
 
 window.addEventListener("scroll", debounce(checkSlide));
