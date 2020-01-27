@@ -25,6 +25,8 @@ function checkSlide(e) {
       window.scrollY + window.innerHeight - slideImage.height / 2;
     // bottom of the image
     const imageBottom = sliderImage.offsetTop + sliderImage.height;
+    const isHalfShown = slideInAt > Slider.sliderImage.offsetTop;
+    const isNotScrolledPast = window.scrollY < imageBottom;
   });
 }
 
